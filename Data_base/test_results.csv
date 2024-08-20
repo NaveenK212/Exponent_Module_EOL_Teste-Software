@@ -1,0 +1,4 @@
+sl_no,dut_serial_number,module_no,operator,test_time,time_stamp,insulation_tester_baseplate_to_negative,insulation_tester_baseplate_to_positive,voltage_harness_test_ch1,voltage_harness_test_ch2,voltage_harness_test_ch3,voltage_harness_test_ch4,voltage_harness_test_ch5,voltage_harness_test_ch6,voltage_harness_test_ch7,voltage_harness_test_ch8,voltage_harness_test_ch9,temperature_ch1,temperature_ch2,temperature_ch3,weld_resistance_ch1,weld_resistance_ch2,weld_resistance_ch3,weld_resistance_ch4,weld_resistance_ch5,weld_resistance_ch6,weld_resistance_ch7,weld_resistance_ch8,weld_resistance_ch9,weld_resistance_at_load_current,result
+1,DUT,Module,operator,123,19:August:2024:11:30:13,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS
+2,DUT,Module,operator,123,19:August:2024:11:34:48,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS
+3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
