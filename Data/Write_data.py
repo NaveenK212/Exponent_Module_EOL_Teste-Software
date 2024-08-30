@@ -1,0 +1,53 @@
+import msoffcrypto
+import pandas as pd
+import io
+import sys
+import os
+import win32com.client as win32
+def main():
+# Specify the path to your Excel file
+    file_path =os.path.join(os.getcwd(),'Limits_data.xlsx')
+    # Password to open the Excel file
+    password = sys.argv[2].strip()
+    # Password to save the Excel file
+
+    # Decrypt the file
+    decrypted = io.BytesIO()
+    with open(file_path, 'rb') as file:
+        office_file = msoffcrypto.OfficeFile(file)
+        office_file.load_key(password=password)
+        office_file.decrypt(decrypted)
+
+    # Load the decrypted content into a DataFrame
+    df = pd.read_excel(decrypted, engine='openpyxl')
+
+    # Process the string and populate Min_L and Max_L lists
+    string = sys.argv[1].split(',')
+    Min_L = []
+    Max_L = []
+
+    for i, val in enumerate(string):
+        if i % 2 == 0:
+            Min_L.append(val)
+        else:
+            Max_L.append(val)
+
+    # Assign the lists to the DataFrame columns
+    df["Min"] = Min_L
+    df["Max"] = Max_L
+
+    # Save the modified DataFrame to the Excel file without a password
+    output_path = os.path.join(os.getcwd(),'Limits_data.xlsx')
+    df.to_excel(output_path, index=False, engine='openpyxl', sheet_name='Sheet1')
+
+    # Apply the password protection using win32com
+    excel = win32.Dispatch('Excel.Application')
+    workbook = excel.Workbooks.Open(output_path)
+    workbook.Password = password
+    workbook.SaveAs(output_path, Password=password)
+    workbook.Close(SaveChanges=True)
+    excel.Quit()
+
+    print(f"Modified file saved to {output_path} with password protection.")
+if __name__ == "__main__":
+    main()
