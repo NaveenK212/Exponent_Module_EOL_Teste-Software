@@ -4,12 +4,12 @@ import io
 import sys
 import os
 import win32com.client as win32
+
 def main():
-# Specify the path to your Excel file
-    file_path =os.path.join(os.getcwd(),'Limits_data.xlsx')
+    # Specify the path to your Excel file
+    file_path = os.path.join(os.getcwd(), 'Limits_data.xlsx')
     # Password to open the Excel file
     password = sys.argv[2].strip()
-    # Password to save the Excel file
 
     # Decrypt the file
     decrypted = io.BytesIO()
@@ -36,18 +36,27 @@ def main():
     df["Min"] = Min_L
     df["Max"] = Max_L
 
-    # Save the modified DataFrame to the Excel file without a password
-    output_path = os.path.join(os.getcwd(),'Limits_data.xlsx')
-    df.to_excel(output_path, index=False, engine='openpyxl', sheet_name='Sheet1')
+    # Save the modified DataFrame to a temporary file without a password
+    temp_output_path = os.path.join(os.getcwd(), 'Temp_Limits_data.xlsx')
+    df.to_excel(temp_output_path, index=False, engine='openpyxl', sheet_name='Sheet1')
 
     # Apply the password protection using win32com
     excel = win32.Dispatch('Excel.Application')
-    workbook = excel.Workbooks.Open(output_path)
+    excel.DisplayAlerts = False  # Suppress prompts like the "Replace" dialog
+
+    workbook = excel.Workbooks.Open(temp_output_path)
     workbook.Password = password
-    workbook.SaveAs(output_path, Password=password)
+    workbook.SaveAs(file_path, Password=password)
     workbook.Close(SaveChanges=True)
+    
+    excel.DisplayAlerts = True  # Re-enable alerts
     excel.Quit()
 
-    print(f"Modified file saved to {output_path} with password protection.")
+    # Remove the temporary file
+    if os.path.exists(temp_output_path):
+        os.remove(temp_output_path)
+
+    print(f"Modified file saved to {file_path} with password protection.")
+
 if __name__ == "__main__":
     main()

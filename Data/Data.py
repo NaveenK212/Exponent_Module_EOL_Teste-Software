@@ -6,7 +6,7 @@ import os
 
 def main():
     # Specify the path to your Excel file
-    file_path = os.path.join(os.getcwd(),'Limits_data.xlsx')
+    file_path = os.path.join(os.getcwd(), 'Limits_data.xlsx')
 
     # Password to open the Excel file
     password = sys.argv[1]
@@ -22,7 +22,7 @@ def main():
     df = pd.read_excel(
         decrypted,
         usecols="C",      
-        nrows=8,
+        nrows=9,
         engine='openpyxl'
     )
     df = df["Min"]
@@ -40,8 +40,12 @@ def main():
     for i in range(0, 7):
         min_max.append(str(df[i]))
         min_max.append(str(df_1[i]))
-
+    min_max.append(str(df[7]))
     # Print the result
     print(",".join(min_max))
+
+    # Exit the program
+    sys.exit(0)
+
 if __name__ == "__main__":
     main()
