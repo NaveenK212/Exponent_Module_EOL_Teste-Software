@@ -38,8 +38,14 @@ def main():
     # Combine Min and Max values
     min_max = []
     for i in range(0, 7):
-        min_max.append(str(df[i]))
-        min_max.append(str(df_1[i]))
+        if df[i] == '-':
+            min_max.append("NULL")
+        else:
+            min_max.append(str(df[i]))
+        if df_1[i] == '-':
+            min_max.append("NULL")
+        else:
+            min_max.append(str(df_1[i]))
     min_max.append(str(df[7]))
     # Print the result
     print(",".join(min_max))
