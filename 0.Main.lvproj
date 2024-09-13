@@ -348,16 +348,16 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5236E9E0-A2D1-4666-A8AA-EC361A8A166C}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">7</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Exponent_EOL_TESTER_REV_2.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/0.Main/Exponent_EOL_TESTER_REV_2.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">Exponent_EOL_TESTER_REV_3.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/0.Main/Exponent_EOL_TESTER_REV_3.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/0.Main/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{860C4AA1-824C-4B86-AF72-DD8C25D594DD}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C349445C-2F81-4510-B7DF-C3B90377BAA0}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/0.Main.vi</Property>
@@ -370,7 +370,7 @@
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 apex</Property>
 				<Property Name="TgtF_productName" Type="Str">0.Main</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{5AFADFDF-3E7A-4690-B697-C5B7CE46CB1D}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Exponent_EOL_TESTER_REV_2.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Exponent_EOL_TESTER_REV_3.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
