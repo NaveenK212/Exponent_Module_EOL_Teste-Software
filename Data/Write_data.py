@@ -33,6 +33,11 @@ def main():
             Max_L.append(val)
 
     # Assign the lists to the DataFrame columns
+    # for i in sys.argv[2].split(','):
+    Min_L.append(Max_L[-1])
+    Max_L.pop(-1)
+    Max_L.append("")
+    Max_L.append("")
     df["Min"] = Min_L
     df["Max"] = Max_L
 

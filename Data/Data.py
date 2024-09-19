@@ -22,7 +22,7 @@ def main():
     df = pd.read_excel(
         decrypted,
         usecols="C",      
-        nrows=9,
+        nrows=10,
         engine='openpyxl'
     )
     df = df["Min"]
@@ -47,6 +47,7 @@ def main():
         else:
             min_max.append(str(df_1[i]))
     min_max.append(str(df[7]))
+    min_max.append(str(df[8]))
     # Print the result
     print(",".join(min_max))
 
