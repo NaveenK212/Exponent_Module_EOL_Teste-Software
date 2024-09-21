@@ -40,6 +40,9 @@ def main():
     df["Min"] = Min_L
     df["Max"] = Max_L
 
+    # Replace NaN values with empty strings
+    df.fillna('', inplace=True)
+
     # Save the modified DataFrame to a temporary file without a password
     temp_output_path = os.path.join(os.getcwd(), 'Temp_Limits_data.xlsx')
     df.to_excel(temp_output_path, index=False, engine='openpyxl', sheet_name='Sheet1')

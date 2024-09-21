@@ -25,6 +25,7 @@
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
 				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-Accelerometer).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-Accelerometer).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-Charge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-Charge).vi"/>
@@ -169,7 +170,6 @@
 				<Item Name="DAQmx Read (Raw 1D U16).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Raw 1D U16).vi"/>
 				<Item Name="DAQmx Read (Raw 1D U32).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Raw 1D U32).vi"/>
 				<Item Name="DAQmx Read.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read.vi"/>
-				<Item Name="DAQmx Reset Device.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/system.llb/DAQmx Reset Device.vi"/>
 				<Item Name="DAQmx Start Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Start Task.vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Write (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/write.llb/DAQmx Write (Analog 1D DBL NChan 1Samp).vi"/>
@@ -278,6 +278,7 @@
 			<Item Name="adminID.vi" Type="VI" URL="../support/adminID.vi"/>
 			<Item Name="Barcode user prompt.vi" Type="VI" URL="../Barcode user prompt.vi"/>
 			<Item Name="comparison selection.ctl" Type="VI" URL="../controls/comparison selection.ctl"/>
+			<Item Name="Control 1.ctl" Type="VI" URL="../controls/Control 1.ctl"/>
 			<Item Name="DAQ_sub_DI-DO_.vi" Type="VI" URL="../Ni DAQ/DAQ_sub_DI-DO_.vi"/>
 			<Item Name="Database_C_U.vi" Type="VI" URL="../Database_C_U.vi"/>
 			<Item Name="developer_test sequence.ctl" Type="VI" URL="../controls/developer_test sequence.ctl"/>
@@ -309,8 +310,8 @@
 			<Item Name="Operator_id_check.vi" Type="VI" URL="../Operator_id_check.vi"/>
 			<Item Name="PASS_FAIL_Prompt.vi" Type="VI" URL="../PASS_FAIL_Prompt.vi"/>
 			<Item Name="Read_Data.vi" Type="VI" URL="../Data/Read_Data.vi"/>
+			<Item Name="Replace_String.vi" Type="VI" URL="../Replace_String.vi"/>
 			<Item Name="Reset_resultbackground.vi" Type="VI" URL="../Reset_resultbackground.vi"/>
-			<Item Name="Resistance to temp.vi" Type="VI" URL="../Resistance to temp.vi"/>
 			<Item Name="RMU Check Loop Error.vi" Type="VI" URL="../support/RMU Check Loop Error.vi"/>
 			<Item Name="RMU Error Handler - Event Handling Loop.vi" Type="VI" URL="../support/RMU Error Handler - Event Handling Loop.vi"/>
 			<Item Name="RMU Error Handler - Message Handling Loop.vi" Type="VI" URL="../support/RMU Error Handler - Message Handling Loop.vi"/>
@@ -318,6 +319,7 @@
 			<Item Name="RMU User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/RMU User Event - Stop.lvlib"/>
 			<Item Name="simulate enter button.vi" Type="VI" URL="../simulate enter button.vi"/>
 			<Item Name="temp comprasion.vi" Type="VI" URL="../temp comprasion.vi"/>
+			<Item Name="Temperature_Calculation.vi" Type="VI" URL="../Temperature_Calculation.vi"/>
 			<Item Name="test step description.ctl" Type="VI" URL="../controls/test step description.ctl"/>
 			<Item Name="test type selection.ctl" Type="VI" URL="../controls/test type selection.ctl"/>
 			<Item Name="Triggering_no_edit_deletion.vi" Type="VI" URL="../Triggering_no_edit_deletion.vi"/>
@@ -348,16 +350,16 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5236E9E0-A2D1-4666-A8AA-EC361A8A166C}</Property>
-				<Property Name="Bld_version.build" Type="Int">7</Property>
+				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Exponent_EOL_TESTER_REV_3.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/0.Main/Exponent_EOL_TESTER_REV_3.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">Exponent_EOL_TESTER_REV_4.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/0.Main/Exponent_EOL_TESTER_REV_4.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/0.Main/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C349445C-2F81-4510-B7DF-C3B90377BAA0}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A48171BE-0751-4925-B18A-1719702395D5}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/0.Main.vi</Property>
@@ -370,7 +372,7 @@
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2024 apex</Property>
 				<Property Name="TgtF_productName" Type="Str">0.Main</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{5AFADFDF-3E7A-4690-B697-C5B7CE46CB1D}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Exponent_EOL_TESTER_REV_3.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Exponent_EOL_TESTER_REV_4.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
