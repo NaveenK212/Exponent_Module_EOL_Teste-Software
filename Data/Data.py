@@ -22,7 +22,7 @@ def main():
     df = pd.read_excel(
         decrypted,
         usecols="C",      
-        nrows=10,
+        nrows=17,
         engine='openpyxl'
     )
     df = df["Min"]
@@ -30,7 +30,7 @@ def main():
     df_1 = pd.read_excel(
         decrypted,
         usecols="D",      
-        nrows=8,
+        nrows=15,
         engine='openpyxl'
     )
     df_1 = df_1["Max"]
