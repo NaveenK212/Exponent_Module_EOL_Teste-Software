@@ -23,9 +23,15 @@ def main():
 
     # Process the string and populate Min_L and Max_L lists
     string = sys.argv[1].split(',')
+    weld=string[0:9]
+    for i in range(0,9):
+        string.pop(i)
     Min_L = []
     Max_L = []
-
+    for i in weld:
+        Max_L.append(i)
+        Min_L.append("nan")
+    print(Min_L,Max_L)
     for i, val in enumerate(string):
         if i % 2 == 0:
             Min_L.append(val)

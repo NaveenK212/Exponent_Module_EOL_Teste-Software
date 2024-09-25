@@ -26,7 +26,6 @@ def main():
         engine='openpyxl'
     )
     df = df["Min"]
-
     df_1 = pd.read_excel(
         decrypted,
         usecols="D",      
@@ -34,10 +33,11 @@ def main():
         engine='openpyxl'
     )
     df_1 = df_1["Max"]
-
     # Combine Min and Max values
     min_max = []
-    for i in range(0, 7):
+    for i in range(0,9):
+        min_max.append(str(df_1[i]))
+    for i in range(9, 14):
         if df[i] == '-':
             min_max.append("NULL")
         else:
@@ -46,8 +46,8 @@ def main():
             min_max.append("NULL")
         else:
             min_max.append(str(df_1[i]))
-    min_max.append(str(df[7]))
-    min_max.append(str(df[8]))
+    min_max.append(str(df[14]))
+    min_max.append(str(df[15]))
     # Print the result
     print(",".join(min_max))
 
