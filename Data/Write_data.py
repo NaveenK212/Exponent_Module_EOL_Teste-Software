@@ -23,27 +23,17 @@ def main():
 
     # Process the string and populate Min_L and Max_L lists
     string = sys.argv[1].split(',')
-    print(string)
-    weld=string[0:9]
-    for i in range(0,9):
-        print(string)
-        string.pop(0)
-        print(string)
     Min_L = []
     Max_L = []
-    for i in weld:
-        Max_L.append(i)
-        Min_L.append("nan")
     for i, val in enumerate(string):
         if i % 2 == 0:
             Min_L.append(val)
         else:
             Max_L.append(val)
-
+    print(Max_L)
     # Assign the lists to the DataFrame columns
-    Min_L.append(Max_L[-1])
-    Max_L.pop(-1)
-    Max_L.append("")
+    # Min_L.append(string[-2])
+    Min_L.append(string[-1])
     Max_L.append("")
     print(Min_L,Max_L)
     df["Min"] = Min_L
