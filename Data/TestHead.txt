@@ -1,7 +1,7 @@
-PROJECT,Vinyas board testing
-MODULE,IO Board
-PART NO.,4W9101070
+PROJECT,
+MODULE,
+PART NO.,
 BARCODE,
 ACCOUNT NAME,
 User Name,
-App_Version,REV_1
+App_Version,
