@@ -17,6 +17,7 @@
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -246,6 +247,7 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="Merge Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Merge Errors.vi"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
@@ -281,8 +283,10 @@
 			<Item Name="Control 1.ctl" Type="VI" URL="../controls/Control 1.ctl"/>
 			<Item Name="DAQ_sub_DI-DO_.vi" Type="VI" URL="../Ni DAQ/DAQ_sub_DI-DO_.vi"/>
 			<Item Name="Database_C_U.vi" Type="VI" URL="../Database_C_U.vi"/>
+			<Item Name="Delete_Variant.vi" Type="VI" URL="../Data/Delete_Variant.vi"/>
 			<Item Name="developer_test sequence.ctl" Type="VI" URL="../controls/developer_test sequence.ctl"/>
 			<Item Name="DMM measuring state.ctl" Type="VI" URL="../controls/DMM measuring state.ctl"/>
+			<Item Name="edit_variant_name.vi" Type="VI" URL="../Data/edit_variant_name.vi"/>
 			<Item Name="encode_decode.vi" Type="VI" URL="../support/login/encode_decode.vi"/>
 			<Item Name="encryption.ctl" Type="VI" URL="../controls/encryption.ctl"/>
 			<Item Name="Faill_adding_value.vi" Type="VI" URL="../Faill_adding_value.vi"/>
@@ -294,6 +298,7 @@
 			<Item Name="Incorrect PW (try again).vi" Type="VI" URL="../support/login/Incorrect PW (try again).vi"/>
 			<Item Name="initialise cluster.ctl" Type="VI" URL="../controls/initialise cluster.ctl"/>
 			<Item Name="Initialise User login and application data.vi" Type="VI" URL="../Initialise User login and application data.vi"/>
+			<Item Name="Input_VI.vi" Type="VI" URL="../Input_VI.vi"/>
 			<Item Name="isolation_test_replace_empty.vi" Type="VI" URL="../isolation_test_replace_empty.vi"/>
 			<Item Name="KtDAQ970.dll" Type="Document" URL="KtDAQ970.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -321,6 +326,8 @@
 			<Item Name="RMU User Event - Stop.lvlib" Type="Library" URL="../support/User Event - Stop/RMU User Event - Stop.lvlib"/>
 			<Item Name="simulate enter button.vi" Type="VI" URL="../simulate enter button.vi"/>
 			<Item Name="temp comprasion.vi" Type="VI" URL="../temp comprasion.vi"/>
+			<Item Name="temp_selection.vi" Type="VI" URL="../Data/temp_selection.vi"/>
+			<Item Name="temp_selection_saving.vi" Type="VI" URL="../Data/temp_selection_saving.vi"/>
 			<Item Name="Temperature_Calculation.vi" Type="VI" URL="../Temperature_Calculation.vi"/>
 			<Item Name="test step description.ctl" Type="VI" URL="../controls/test step description.ctl"/>
 			<Item Name="test type selection.ctl" Type="VI" URL="../controls/test type selection.ctl"/>
@@ -333,6 +340,7 @@
 			<Item Name="verify result.vi" Type="VI" URL="../verify result.vi"/>
 			<Item Name="verify_results_array.vi" Type="VI" URL="../verify_results_array.vi"/>
 			<Item Name="weld_resistance calculation.vi" Type="VI" URL="../weld_resistance calculation.vi"/>
+			<Item Name="write_to_ini.vi" Type="VI" URL="../Data/write_to_ini.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="0.Main" Type="EXE">
